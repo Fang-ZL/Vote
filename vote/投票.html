@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="web3.min.js"></script>
+    <link rel="stylesheet" href="app1.css" />
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>区块链 Voting🗳
+    </title>
+</head>
+
+<body>
+    <h2>参与投票</h2>
+
+    <button class="enableEthereumButton">当前账号</button>
+    <h5>Account: <span class="showAccount"></span></h5>
+    <hr />
+
+
+
+    <div class="container">
+        <h1 style="text-align: center;">基于区块链的投票系统</h1>
+        <hr>
+    
+    </div>
+
+
+    <div id="ftc-make">
+    <h2>获取投票列表</h2>
+    <div class="form-group">
+    <h2>投票起始时间：<span class="getVoteStartTime"></span></h2>
+    <h2>投票结束时间：<span class="getVoteEndTime"></span></h2>
+    <h2>标题：<span class="name"></span></h2>
+    <h2>选项1：<span class="list1"></span></h2>
+    <h2>选项2：<span class="list2"></span></h2>
+    <h2>选项3：<span class="list3"></span></h2>
+    <button id="btn_getCandidateList">获取</button>
+    </div>
+    </div>
+    <div class=form-break></div>
+    <hr>
+
+    <h2>请在获取列表后再进行投票</h2>
+
+    <hr>
+
+
+    <div id="ftc-make">
+        <div class="form-group">
+        <h2><span class="list1"></span></h2><button id="btn_voteForCandidate1">投票</button><input type="hidden" id="voteForCandidate1" value="0x1000000000000000000000000000000000000000000000000000000000000000">
+        <h2><span class="list2"></span></h2><button id="btn_voteForCandidate2">投票</button><input type="hidden" id="voteForCandidate2" value="0x2000000000000000000000000000000000000000000000000000000000000000">
+        <h2><span class="list3"></span></h2><button id="btn_voteForCandidate3">投票</button><input type="hidden" id="voteForCandidate3" value="0x3000000000000000000000000000000000000000000000000000000000000000">
+        </div>
+        </div>
+        <div class=form-break></div>
+        <hr>
+
+
+
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>

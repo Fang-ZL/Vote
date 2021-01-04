@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="web3.min.js"></script>
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>区块链 Voting🗳
+    </title>
+</head>
+
+<body>
+    <h2>发起投票</h2>
+
+    <button class="enableEthereumButton">当前账号</button>
+    <h5>Account: <span class="showAccount"></span></h5>
+    <hr />
+
+
+
+    <div class="container">
+        <h1 style="text-align: center;">基于区块链的投票系统</h1>
+        <hr>
+    
+    </div>
+
+    <div id="ftc-make">
+        <h2>投票选项设置</h2>
+        <div class="form-group">
+            项目名称：<input type="text" id="title" value="" placeholder="请输入名称"><br>
+            候选项1：<input type="text" id="select1" value="" placeholder="请设置候选项"><br>
+            候选项2：<input type="text" id="select2" value="" placeholder="请设置候选项"><br>
+            候选项3：<input type="text" id="select3" value="" placeholder="请设置候选项"><br>
+            <button class="btn-fetchOne" id="btn_projectSetup" type="button" >确认</button>
+        </div>
+    </div>
+
+
+    <div class=form-break></div>
+    <hr>
+    
+
+
+    <div id="ftc-make">
+        <h2>注册码(bytes32)设置</h2>
+        <!-- 必须是刚好64位16进制编码才行，如：[0x7465737400000000000000000000000000000000000000000000000000000000] -->
+        <div class="form-group">
+            注册码1：<input type="text" id="register1" value="" placeholder="请设置注册码"><br>
+            注册码2：<input type="text" id="register2" value="" placeholder="请设置注册码"><br>
+            注册码3：<input type="text" id="register3" value="" placeholder="请设置注册码"><br>
+            <button class="btn-fetchOne" id="btn_registerIdSetup" type="button" >确认</button>
+        </div>
+    </div>
+
+
+    <div class=form-break></div>
+    <hr>
+
+
+    <div class="form-group">
+        <h2>时间集设置</h2>
+        <div class="form-group">
+            注册起始时间：<input type="text" id="register_start_time" value="" placeholder="xxxx-xx-xx xx:xx"><br>
+            注册结束时间：<input type="text" id="register_end_time" value="" placeholder="xxxx-xx-xx xx:xx"><br>
+            投票开始时间：<input type="text" id="vote_start_time" value="" placeholder="xxxx-xx-xx xx:xx"><br>
+            投票结束时间：<input type="text" id="vote_end_time" value="" placeholder="xxxx-xx-xx xx:xx"><br>
+            <button class="btn-fetchOne" id="btn_TimeSetSetup" type="button" >确认</button>
+        </div>
+    </div>
+    <hr>
+
+
+    <div>
+        <button><a href="http://127.0.0.1:5501/zy.html">回到主页</a></button>
+    </div>
+
+
+
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>

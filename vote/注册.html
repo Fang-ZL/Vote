@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="web3.min.js"></script>
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>区块链 Voting🗳
+    </title>
+</head>
+
+<body>
+    <h2>账号注册</h2>
+
+    <button class="enableEthereumButton">当前账号</button>
+    <h5>Account: <span class="showAccount"></span></h5>
+    <hr />
+
+    <div class="container">
+        <h1 style="text-align: center;">基于区块链的投票系统</h1>
+        <hr>
+    
+    </div>
+
+
+    <div id="ftc-make">
+        <h2>注册时间获取</h2>
+        <div class="form-group">
+            <h2>注册起始时间：<span class="getRegisterStartTime"></span></h2>
+            <h2>注册结束时间：<span class="getRegisterEndTime"></span></h2>
+        <button id="btn_getRegisterTimes">查询</button>
+        <br>
+        </div>
+    </div>
+
+    <hr>
+    <h2>请在规定时间内完成注册</h2>
+    <hr>
+
+
+
+    <div id="ftc-make">
+        <h2>注册</h2>
+        <div class="form-group">
+            注册码：<input type="password" id="someoneRegister" value="" placeholder="请输入注册码(bytes32)"><br>
+            <button class="btn-fetchOne" id="btn_someoneRegister" type="button">确认</button>
+        </div>
+    </div>
+    <hr>
+
+    <div>
+        <button><a href="http://127.0.0.1:5501/zy.html">回到主页</a></button>
+    </div>
+
+    
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
