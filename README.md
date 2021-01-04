@@ -122,7 +122,7 @@
 
 区块链基础架构模型
 
-![img](file:///C:\Users\JASONF~1\AppData\Local\Temp\ksohtml15112\wps2.png) 
+![Image text](https://github.com/Fang-ZL/img-storage/wps2.png
 
 一般说来，区块链系统由数据层、网络层、共识层、激励层、合约层和应用层组成。
 
