@@ -4,11 +4,44 @@ body {
   font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
   color: #212121;
 }
-.container {
+.both{
+	background-image: url(vote1.jpg);
+	background-repeat:no-repeat;
+	position:relative;
+	background-position: 49% 49%;
+	
+}
+.container-cx{
   width: 80%;
   margin: 0 auto;
 }
 
+.center-cx{
+	margin: 0 auto;
+	width: 80%;
+	height: 250px;
+}
+
+
+.btn-cx,
+#ftc-make-cx{
+	float: left;
+	height: 200px;
+	width: 32%;
+	text-align: right;
+	padding-left: 5%;
+}
+#ftc-make-cx{
+	width: 50%;
+	text-align: left;
+	padding-left: 13%;
+}
+
+.center-cx::after{
+content:"";
+display:inline-block;
+clear:both;
+}
 
 .bold { 
   font-weight: bolder;
@@ -31,6 +64,7 @@ button {
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
+	margin-top: 10px;
 }
 
 .sell { 
@@ -59,6 +93,13 @@ button {
   color:white;
   width:100%;
   padding:5px;
+}
+#form-group_cx{
+	display: none;
+}
+
+#form-group_cx :target{
+	display: block;
 }
 
 .horizontal-rule {

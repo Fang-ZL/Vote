@@ -1,55 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <script type="text/javascript" src="jquery.js"></script>
-    <script type="text/javascript" src="web3.min.js"></script>
-    <meta name="viewport"
-        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>区块链 Voting🗳
-    </title>
-</head>
+	<head>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="web3.min.js"></script>
+		<link rel="stylesheet" href="app1.css" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>区块链 Voting🗳
+		</title>
+	</head>
 
-<body>
-    <h2>结果查询</h2>
+	<body class="both">
+		<h2>结果查询</h2>
 
-    <button class="enableEthereumButton">当前账号</button>
-    <h5>Account: <span class="showAccount"></span></h5>
-    <hr />
-
-
-
-    <div class="container">
-        <h1 style="text-align: center;">基于区块链的投票系统</h1>
-        <hr>
-    
-    </div>
+		<button class="enableEthereumButton">当前账号</button>
+		<h5>Account: <span class="showAccount"></span></h5>
+		<hr />
 
 
 
-    <div id="ftc-make">
-        <h2>投票结果</h2>
-        <div class="form-group">
-            <h2>投票名称：<span class="name"></span></h2>
-            <h2><span class="list1"></span>：<span class="01"></span>票</h2><input type="hidden" id="totalVotesFor1" value="0x1000000000000000000000000000000000000000000000000000000000000000">
-            <h2><span class="list2"></span>：<span class="02"></span>票</h2><input type="hidden" id="totalVotesFor2" value="0x2000000000000000000000000000000000000000000000000000000000000000">
-            <h2><span class="list3"></span>：<span class="03"></span>票</h2><input type="hidden" id="totalVotesFor3" value="0x3000000000000000000000000000000000000000000000000000000000000000">
-        <button id="btn_totalVotesFor">查询</button>
-        </div>
-    </div>
-    <div class=form-break></div>
-    <hr>
+		<div class="container-cx">
+			<h1 style="text-align: center;">基于区块链的投票系统</h1>
+			<hr>
 
-    <div>
-        <button><a href="http://127.0.0.1:5501/zy.html">回到主页</a></button>
-    </div>
+		</div>
+		<div class="center-cx">
+			<div class="btn-cx">
+				<h2>投票结果</h2>
+				<a href="#form-group_cx"><button id="btn_totalVotesFor">查询</button></a>
+			</div>
+			<div id="ftc-make-cx">
+				<div class="vote">
+					<div id="form-group_cx">
+						<div class="aa">
+							<h2>投票名称：<span class="name"></span></h2>
+						</div>
+						<div class="aa">
+							<h2><span class="list1"></span>：<span class="01"></span>票</h2><input type="hidden" id="totalVotesFor1" value="0x1000000000000000000000000000000000000000000000000000000000000000">
+						</div>
+						<div class="aa">
+							<h2><span class="list2"></span>：<span class="02"></span>票</h2><input type="hidden" id="totalVotesFor2" value="0x2000000000000000000000000000000000000000000000000000000000000000">
+						</div>
+						<div class="aa">
+							<h2><span class="list3"></span>：<span class="03"></span>票</h2><input type="hidden" id="totalVotesFor3" value="0x3000000000000000000000000000000000000000000000000000000000000000">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class=form-break></div>
+		<hr>
+
+		<script type="text/javascript">
+			var target = document.getElementById("btn_totalVotesFor")
+			target.onclick = function() {
+				document.getElementById("form-group_cx").style.display = "block";
+			}
+		</script>
+		<script type="text/javascript" src="app.js"></script>
 
 
-
-
-    <script type="text/javascript" src="app.js"></script>
-</body>
+	</body>
 
 </html>
