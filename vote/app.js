@@ -430,7 +430,7 @@ var contractAbi = [
 
 // 0x2b67db3e562528FEf2ba040f83f6D6421BBfb13E  本地
 // rinkeby
-var contract = new web3.eth.Contract(contractAbi, "0xc77829B47E4f9299B19DbE370009FC4758481d93");
+var contract = new web3.eth.Contract(contractAbi, "0x7c1AaD7482F3DbF08CcEc7CD63b200E145aad9Ea");
 
 console.log("contract MyDapp", contract)
 
